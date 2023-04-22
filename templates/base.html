@@ -1,0 +1,81 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- sales CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+      <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    body{
+    font-family : 'Nanum Gothic';
+    }
+    .btn-primary{
+    color : grey;
+    background-color : #e5e2f4;
+    border-color : #e5e2f4
+    }
+    .btn-primary:hover{
+    color : #fff;
+    background-color : grey;
+    border-color : grey;
+    }
+    .page-item.active .page-link {
+    z-index: 3;
+    color: grey;
+    background-color: #e5e2f4;
+    border-color: #e5e2f4;
+    }
+    .page-link{
+    color: black;
+    background-color: #fff;
+    }
+    .page-link:hover{
+    color: black;
+    background-color: #dedede;
+    }
+    link_question_list{
+    color : black;
+    }
+    .btn-secondary {
+    color: grey;
+    background-color: #e5e2f4;
+    border-color: #e5e2f4;
+    }
+    .btn-secondary:hover{
+    color: #fff;
+    background-color: grey;
+    border-color: grey;
+    }
+    .badge-warning {
+    color: #212529;
+    background-color: #cccccc;
+    }
+    .btn-outline-secondary {
+    color: #6c757d;
+    border-color: #ced4da;
+    background-color: #e5e2f4;
+    }
+  </style>
+    <title>영화관리시스템</title>
+</head>
+<body>
+{% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+<!-- jQuery JS -->
+<script src="{% static 'jquery-3.6.4.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+</body>
+</html>
